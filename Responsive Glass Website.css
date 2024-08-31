@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0px;
+} 
+body{
+    background-color: rgba(0, 0, 0, 0.822);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: serif;
+    height: 100vh;
+}
+.container{
+    background-color: rgba(255, 255, 255, 0.226);
+    width:80%;
+    height: 80%;
+    border-radius: 20px;
+}
+/*Start Section Header*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    width: 80%;        
+    margin: auto;
+}
+.logo{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin:7px;
+    font-size: 18px;
+    font-weight: 400px;
+    transition: all 0.5s;
+}
+nav a:hover{
+    color: red;
+    font-size: 20px;
+}
+/*End Section Header*/
+.div1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    width: 80%;
+    height: 90%;
+    margin: auto;
+}
+.sec{
+width: 40%;
+}
+h2{
+    letter-spacing: 2px;
+    font-size: 24px;
+    font-weight: bold;
+}
+p{
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+img{
+    width: 40%;
+}
+body::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    position: absolute;
+    /*ClipPath of Circle
+    circle(radius at Position x y)
+    Defines a circle using a radius and a position.
+    */    
+    clip-path:circle(40% at right 70%);
+    z-index: -1;
+}
+/*Small Screens*/
+@media screen and (max-width:950px){
+.sec{
+  width:60%;  
+}
+img{
+    width:30%;
+}
+}
+@media screen and (max-width:650px){
+    .header , .div1{
+      flex-direction: column;
+      justify-content: center;
+   }
+   nav{
+    margin-top: 10px;
+   }
+   .sec{
+       width:100%;
+   }
+   body::after{
+       clip-path: circle(30% at bottom);
+   }
+}
+
+ 
+    
+ 
