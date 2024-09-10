@@ -36,7 +36,7 @@ body{
 nav a{
     color: white;
     text-decoration: none;
-    margin:7px;
+    margin:0 7px;
     font-size: 18px;
     font-weight: 400px;
     transition: all 0.5s;
@@ -106,6 +106,10 @@ img{
    }
    body::after{
        clip-path: circle(30% at bottom);
+        margin-top: 20px;      
+   }
+   img{
+    margin-top: 30px;
    }
 }
 
